@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #page {
+        display: flex;
+        flex-direction: column;
+
+        background-color: aqua;
+
+        gap: 100px;
+      }
+      #header {
+        display: flex;
+        gap: 10px;
+        border: 2px solid black;
+        padding: 20px;
+
+        height: 50px;
+      }
+      #body {
+        display: flex;
+        gap: 10px;
+        border: 2px solid black;
+        padding: 20px;
+        
+
+        height: 350px;
+      }
+      #footer {
+        display: flex;
+        gap: 10px;
+        border: 2px solid black;
+        padding: 20px;
+
+        height: 150px;
+      }
+      div {
+        border: 1px solid black;
+        flex-grow: 1;
+        background-color: beige;
+      }
+      #header div{
+        background-color: blueviolet;
+        border-radius: 8px;
+      }
+      #body div{
+        background-color: green;
+        border-radius: 8px;
+      }
+      #footer div{
+        background-color: red;
+        border-radius: 8px;
+      }
+      #b2{
+        flex-grow: 5;
+      }
+      #f1,#f2,#f3{
+        flex-grow: 4;
+      }
+     
+      
+    </style>
+  </head>
+  <body>
+    <div id="page">
+      <div id="header">
+        <div id="h1">header1</div>
+        <div id="h2">header2</div>
+        <div id="h3">header3</div>
+        <div id="h4">header4</div>
+      </div>
+      <div id="body">
+        <div id="b1">body1</div>
+        <div id="b2">body2</div>
+        <div id="b3">body3</div>
+      </div>
+      <div id="footer">
+        <div id="f1">footer1</div>
+        <div id="f2">footer2</div>
+        <div id="f3">footer3</div>
+      </div>
+    </div>
+  </body>
+</html>
